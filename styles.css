@@ -200,7 +200,7 @@ font-family:'Tangerine',serif;
   background-color: #361c03;
   border-radius:5px;
   padding:5px;
-  bottom:120px;
+  bottom:160px;
   padding-left:22px;
   color:azure;
   width:100px;
@@ -594,7 +594,7 @@ right:469px;
     box-shadow:0px 8px 20px rgb(0, 0, 0);
   position:relative;
     top: 30px;
-    left:68%;
+    left:64%;
     transform-origin: 50% 0%;
     animation: conditionalOpen 5s normal forwards ease-in-out;
   }
@@ -695,14 +695,14 @@ right:469px;
   }
 #showButton{
   position:relative;
-  top:200px;
+  top:190px;
   left:70px;
   box-shadow: 0px 5px 10px black;
 }
 #hiddenContent{
   position:absolute;
   top:324vh;
-  left:950px;
+  left:1040px;
 display: none;
   padding:30px;
 }
