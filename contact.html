@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e88bafae48.js" crossorigin="anonymous"></script>
+    <style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;
+}
+.parent1 {
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top:30px;
+    flex-wrap: wrap;
+ 
+}
+
+#contact{
+ background-color: grey;
+ display:flex;
+ justify-content: space-between;
+ flex-direction: column;
+ flex-wrap: wrap;
+min-height: 100vh;
+width:100vw;
+overflow: hidden;
+
+  
+
+}
+.parent2 {
+    display:flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+fieldset{
+  color:white;
+  width:400px;
+  height:420px;
+  padding:40px;
+  border: 1px solid black;
+ 
+  box-shadow: 0px 15px 15px black;
+  background-color: rgb(214, 198, 177);
+}
+::placeholder{
+  color:rgb(69, 71, 45);
+
+}
+input,textarea,button{
+  padding:4px 30px;
+  border-radius: 5px;
+  background: transparent;
+  transition: background-color 0.3s ease;
+  color:rgb(69, 71, 45);
+}
+textarea{
+  border:2px solid black;
+}
+button{
+    margin-right:8px;
+}
+input:hover,textarea:hover,button:hover{
+  background-color:white;
+  color:black;
+}
+.child1 fieldset{
+    min-height:500px;margin:40px;
+}
+.profile{
+  font-size: 10rem;
+color:rgb(243, 224, 224);
+height:0;
+box-shadow: 0px 15px 15px black;
+transition:.5s ease-in-out;
+margin-top:60px;
+}
+.profile:hover{
+cursor:pointer;
+color:antiquewhite;
+}
+#fing{
+  font-size:.1rem;
+  width:0;
+  
+ 
+box-shadow: 0px 10px 10px rgb(14, 12, 12)
+}
+#fing button{
+    width:170px;
+    height:40px;
+background-color: rgb(176, 172, 156);
+margin:auto;
+position: absolute;
+
+}
+#fing button  i{
+    font-size: 1.5rem;
+    transition:1s all;
+}
+#fing:hover button i{
+color:antiquewhite;
+}
+
+legend{
+  text-shadow: 0px 5px 5px black;
+}
+
+
+#end{
+  background-color:rgb(70, 60, 60);
+  width:100vw;
+  height:30vh;
+  display: none;
+
+}
+#end{
+  padding:20px;
+}
+.last{
+  text-decoration: none;
+  display:flex;
+  flex-direction: column;
+  color:white;
+
+}
+.summ{
+  display: flex;
+  flex-direction: row;
+  width:55vw;
+  min-height:5vh;
+  text-decoration: none;
+  color:rgb(147, 131, 131);
+  border: 2px solid black;
+  box-shadow: 0 6px 6px black;
+  background-color:antiquewhite;
+}
+.summ:hover{
+  text-decoration: underline;
+  color:rgb(3, 6, 136);
+}
+    </style>
+</head>
+<body>
+<section id="contact">
+    <div class="parent1">
+        <div class="child1">
+    <fieldset>
+      <legend>YOUR INFORMATION</legend>
+    <form action="sucess.html" onsubmit="return f()" name="first1">
+      <label for="name">Name:</label><br/><br/>
+      <input type="text" placeholder="Enter your name" id="name" name="fname"required><br/><br/>
+      <label for="email">Email:</label><br/><br/>
+      <input type="email" placeholder="123@gmail.com" id="email" required name="femail"><br/><br/>
+      <label for="con">Contact:</label><br/>
+      <input type="tel" id="phone" name="fphone" pattern="[0-9]{10}"placeholder="0123456789" required max="10"><br><br>
+      <div id="phoneValidationMsg"></div>
+      <textarea  type="textarea" rows="3" cols="20" aria-valuemax="Feedback">Enter your feedback here</textarea>
+      <br><br>
+       <button >Submit
+       </button> 
+       <input type="reset"> 
+    </form>
+  </fieldset>
+</div>
+<div class="profile child2">
+<a><i class="fa-solid fa-user"></i></a>
+
+<div id="fing">
+<button id="do">
+    <i class="fa-solid fa-fingerprint"></i></button></div>
+</div>
+</div>
+
+<div class="parent2">
+    <iframe width="490" height="300" src="video1.mp4"YouTube video player frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+</section>
+<section id="end">
+    <div id="sum">
+      <pre style="color:white">Profile links:</pre>
+      <a class="summ"href="mailto:2023richajaiswal@gmail.com">Richajaishwal@gmail.com<a>
+      <a href="https://github.com/Richajaishwal0" class="summ">
+        https://github.com/Richajaishwal0</a>
+      <a href="https://www.linkedin.com/in/richa-jaishwal-45abab29a" class="summ">https://www.linkedin.com/in/richa-jaishwal-45abab29a</a>
+      <a href="https://www.facebook.com/richa.jaiswal.779857" class="summ">https://www.facebook.com/richa.jaiswal.779857 </a>
+      </div>
+  </section>
+  <script>
+        document.getElementById('do').addEventListener('click', function() {
+          var content = document.getElementById('end');
+          if (content.style.display === 'none') {
+            content.style.display = 'block';
+           
+           } else {
+            content.style.display = 'none';
+          }
+        });
+      
+function f() {
+  let  name1= document.forms["first1"]["fname"].value;
+ var x1=document.forms["first1"]["femail"].value;
+ let a=document.forms["first1"]["fphone"].value;
+var atposition1=x1.indexOf("@");  
+var dotposition1=x1.lastIndexOf("."); 
+  if (name1==null || name1==""){  
+  alert("Name can't be blank");  
+  return false;  
+}
+const pattern = /^\d{10}$/;
+const isValid = pattern.test(phoneNumber);
+document.getElementById('phoneValidationMsg').textContent = isValid ? '' : 'Please enter a valid 10-digit phone number.';
+return isValid;
+  
+if (atposition1<1 || dotposition1<atposition1+2 || dotposition1+2>=x1.length){  
+alert("Please enter a valid e-mail address \n atpostion:"+atposition1+"\n dotposition:"+dotposition1);  
+  return false; 
+ 
+}
+
+}
+
+
+  </script>
+</body>
+</html>
+  

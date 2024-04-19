@@ -12,21 +12,18 @@ body{width:100vw;
 .dancing-script-uniquifier> {
   font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
-  /* font-weight: */
     font-style: normal;
 }
 
-@media screen  and (min-width:100px){
+
 header {
-    top:0px;
-    left:0px;
     position:fixed;
     background:black;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: right;
-    width:100%;
+    width:100vw;
     padding:20px 120px;
     z-index:100;
     opacity:1;
@@ -47,9 +44,6 @@ header {
 .logo:hover{
   transform:scale3d(1.1,1.1,1.2);
 }
-   
-
-} 
 #home-icon  {
     display:flex;
     justify-content: space-between;
@@ -62,11 +56,11 @@ header {
     transition:transform 2s ease-in-out;
 }
 #home-icon a:hover{
-transform:translateY(-10px) ;
+transform:translateY(-10px);
 }
  nav{
   animation: slideIn 1s ease-out;
-  width:100%;
+  width:100vw;
  }
  @keyframes slideIn {
   from {
@@ -117,11 +111,14 @@ nav a:before,
       border-radius:15px;
       box-shadow: 0 0px 5px rgb(205, 229, 239),0 0px 25px rgb(205, 229, 239),0 0px 50px rgb(205, 229, 239),0 0px 100px rgb(205, 229, 239),0 0px 200px rgb(205, 229, 239);
       
+  
       
-    
-      
-      
- }   
+ } 
+ @media screen and (max-width:1024px){
+  nav{
+
+  }
+ }  
  section{
     min-height:100vh;
     display: flex;
@@ -200,7 +197,7 @@ font-family:'Tangerine',serif;
   background-color: #361c03;
   border-radius:5px;
   padding:5px;
-  bottom:160px;
+  bottom:100px;
   padding-left:22px;
   color:azure;
   width:100px;
@@ -418,51 +415,7 @@ img:hover{
   transform:Scale(1.1);
 }
 
-#contact{
- background-color: grey;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-/* form{
-  position:relative;
-  right:300px;
-  bottom:100px;
-  color:white;
-} */
-fieldset{
-  position:relative;
-  right:100px;
-  bottom:60px;
-  color:white;
-  width:400px;
-  height:420px;
-  padding:40px;
-  border: 1px solid black;
- 
-  box-shadow: 0px 15px 15px black;
-  background-color: rgb(176, 172, 156);
-}
-::placeholder{
-  color:rgb(69, 71, 45);
 
-}
-input,textarea,button{
-  padding:4px 30px;
-  border-radius: 5px;
- 
-  background: transparent;
-  transition: background-color 0.3s ease;
-  color:rgb(69, 71, 45);
-}
-textarea{
-  border:2px solid black;
-}
-button{margin-right:8px;
-}
-input:hover,textarea:hover,button:hover{
-  background-color:white;
-  color:black;
-}
 #services{
   background-color: rgb(20, 19, 33);
 }
@@ -594,7 +547,7 @@ right:469px;
     box-shadow:0px 8px 20px rgb(0, 0, 0);
   position:relative;
     top: 30px;
-    left:64%;
+    left:70%;
     transform-origin: 50% 0%;
     animation: conditionalOpen 5s normal forwards ease-in-out;
   }
@@ -696,8 +649,12 @@ right:469px;
 #showButton{
   position:relative;
   top:190px;
-  left:70px;
+  left:78px;
   box-shadow: 0px 5px 10px black;
+  width:60px;
+  height:30px;
+  font-size: 15px;
+
 }
 #hiddenContent{
   position:absolute;
@@ -911,7 +868,6 @@ display: none;
   left:290px;
   bottom: 1118px;
   border-radius: 10px 10px 0px 0 ;
- 
 }
 
 .hack{
@@ -988,85 +944,4 @@ animation: animate 5s linear infinite;
 }
 }
 
-.profile{
-  font-size: 200px;
-  position:relative;
-bottom:170px;
-left:300px;
-color:rgb(243, 224, 224);
-width:200px;
-padding-left:15px;
-box-shadow: 0px 15px 15px black;
-transition:transform .2s ease-in-out;
-}
-.profile:hover{
-cursor:pointer;
-transform:Scale(1.1);
-}
-#fing{
-  font-size:15px;
-  position:relative;
-bottom:-20px;
-left:150px;
-padding:15px;
-box-shadow: 0px 10px 10px rgb(14, 12, 12)
-}
 
-legend{
-  text-shadow: 0px 5px 5px black;
-}
-video{
-  position:relative;
-  left:-100px;
-  top:220px;
-  
-
-}
-footer{
-  background-color:rgb(70, 60, 60);
-  width:100%;
-  height:200px;
-  position:absolute;
-  right:0px;
-  display: none;
-
-}
-#end{
-  
-  padding:20px;
-}
-.last{
-  text-decoration: none;
-  display:flex;
-  flex-direction: column;
-  color:white;
-  padding:7px;
-  position:relative;
-  left:50px;
-}
-.sum2 pre{
-  position:relative;
-  left:-100px;
-  font-size: 30px;
-  top:0px;
-
-} 
-.sum2{
-  display: flex;
-  flex-direction: column;
-  left:300px;
-  position:absolute;
-  top:16px;
-}
-.summ{
-  text-decoration: none;
-  color:rgb(147, 131, 131);
-  padding:3px;
-  border: 2px solid black;
-  box-shadow: 0 6px 6px black;
-  background-color: rgb(28, 34, 66);
-}
-.summ:hover{
-  text-decoration: underline;
-  color:white;
-}
