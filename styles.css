@@ -491,14 +491,15 @@ img:hover{
   justify-content: center;
   text-align: center;
   padding:18px;
-    font-family: "Arizonia", cursive;
+    font-family:Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal; 
   color:rgb(178, 241, 242);
 }
 .cone p, .ctwo p{
   color:white;
-font-family: "Arizonia", cursive;
+  font-size: 16px;
+font-family: Arial, Helvetica ;
 
 }
 #services .container2{
@@ -547,9 +548,11 @@ right:469px;
     box-shadow:0px 8px 20px rgb(0, 0, 0);
   position:relative;
     top: 30px;
-    left:70%;
+    left:68%;
     transform-origin: 50% 0%;
     animation: conditionalOpen 5s normal forwards ease-in-out;
+    display: flex;
+    flex-direction: column;
   }
 
   .skill-content1 h1{
@@ -558,6 +561,9 @@ right:469px;
     font-family: cursive;
     font-size: 30px;
     text-shadow: 0px 5px 5px black;
+  }
+  .skill-content1 h2{
+    font-size: 18px;;
   }
 @keyframes conditionalOpen {
  from { transform: scaleY(0) }
@@ -615,32 +621,23 @@ right:469px;
     top:110px;
   }
   
-  .check5{
-    position:relative;
-    left:45%;
-    top:130px
-  }
-  .checke{
-    position:relative;
-    left:30%;
-    top:130px;
-  }
+  
   .check6{
     position:relative;
     left:45%;
-    top:150px;
+    top:135px;
   }
   .checkf{
     position:relative;
-    left:20%;
-    top:150px;
+    left:28%;
+    top:140px;
   }
 
   
 
 
   .check h1,.check small{
-    font-size: 10px;
+    font-size: 8px;
     font-family:cursive;
   }
   #skills small{
@@ -649,11 +646,12 @@ right:469px;
 #showButton{
   position:relative;
   top:190px;
-  left:78px;
+  left:80px;
   box-shadow: 0px 5px 10px black;
   width:60px;
   height:30px;
   font-size: 15px;
+  transform:Scale(1.1);
 
 }
 #hiddenContent{
